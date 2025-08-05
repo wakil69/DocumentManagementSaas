@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fichiers expirés</title>
+  <style>
+    body {
+      background-color: #f6f6f6;
+      padding: 20px;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      color: #f05320;
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #999999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="cid:logoSemiv" alt="Logo Semiv" style="max-width: 150px; margin-bottom: 20px;">
+
+    <div>
+      <h1 class="title">Fichiers expirés</h1>
+
+      <p>Bonjour,</p>
+      <p>Voici la liste des fichiers qui ont récemment expiré :</p>
+
+      <div>
+        {{{expiredFilesHtml}}}
+      </div>
+
+      <p class="footer">Ceci est un message automatique – merci de ne pas y répondre.</p>
+    </div>
+  </div>
+</body>
+</html>
