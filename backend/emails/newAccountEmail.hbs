@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bienvenue</title>
+    <style>
+      body {
+        background-color: #f6f6f6;
+        padding: 20px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .title {
+        color: #f05320;
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: #D2DD4C;
+        color: #51377A;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 12px;
+        color: #999999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="cid:logoSemiv" alt="Logo Semiv" style="max-width: 150px; margin-bottom: 20px;" />
+
+      <h1 class="title">Bienvenue, {{prenom}} !</h1>
+
+      <p>Votre compte a été créé avec succès. Voici vos informations de connexion :</p>
+
+      <ul>
+        <li><strong>Identifiant :</strong> {{email}}</li>
+        <li><strong>Mot de passe :</strong> {{password}}</li>
+      </ul>
+
+      <p>Connectez-vous dès maintenant pour commencer à utiliser notre service.</p>
+
+      <a class="button" href="https://extranet-copro-syndic.semiv-velizy.fr/">
+        Se connecter
+      </a>
+
+      <p class="footer">Merci et à bientôt !</p>
+    </div>
+  </body>
+</html>
